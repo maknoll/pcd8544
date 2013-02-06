@@ -279,7 +279,7 @@ static int __init pcd8544_init_class(void)
 
 static int __init pcd8544_init(void)
 {
-	memset(&pcd8544_dev, 0, sizeof(pcd8544_dev));
+	memset(&pcd8544_dev, ' ', sizeof(pcd8544_dev));
 
 	if (pcd8544_init_cdev() < 0) 
 		goto fail_1;
