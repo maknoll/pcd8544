@@ -11,4 +11,4 @@ all:
 	$(MAKE) ARCH=$(ARCH) CROSS_COMPILE=$(CROSS_COMPILE) -C $(KERNELDIR) M=$(PWD) modules
 
 clean:
-	rm -rf *~ *.ko *.o *.mod.c modules.order Module.symvers .pcd8544* .tmp_versions
+	$(MAKE) ARCH=$(ARCH) CROSS_COMPILE=$(CROSS_COMPILE) -C $(KERNELDIR) M=$(PWD) clean
